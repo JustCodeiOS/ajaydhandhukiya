@@ -1,5 +1,18 @@
 # Portfolio
 
+I am an iOS Developer with over 5 years of experience, specializing in iOS frameworks and technologies. I have extensively worked with Swift and Objective-C.
+
+---
+
+<p align='left'>
+    <img src='https://img.icons8.com/color/344/swift.png' alt="Swift" width="40" height="40">
+    <img src='https://img.icons8.com/color/344/swiftui.png' alt="SwiftUI" width="40" height="40">
+    <img src='https://img.icons8.com/external-tal-revivo-bold-tal-revivo/344/external-apple-inc-logotype-of-an-american-multinational-technology-company-logo-bold-tal-revivo.png' alt="Apple" width="40" height="40">
+    <img src='https://img.icons8.com/color/344/python--v1.png' alt="Python" width="40" height="40">
+</p>
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
