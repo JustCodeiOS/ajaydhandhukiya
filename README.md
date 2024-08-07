@@ -1,5 +1,4 @@
 # Ajay Dhandhukiya
-
 ## Senior iOS Developer
 
 ---
@@ -8,6 +7,7 @@
     <img src='https://img.icons8.com/color/344/swift.png' alt="Swift" width="40" height="40">
     <img src='https://img.icons8.com/external-tal-revivo-bold-tal-revivo/344/external-apple-inc-logotype-of-an-american-multinational-technology-company-logo-bold-tal-revivo.png' alt="Apple" width="40" height="40">
     <img src='https://img.icons8.com/color/344/swiftui.png' alt="SwiftUI" width="40" height="40">
+    <img src='https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg' alt="Objective C" width="40" height="40">
     <img src='https://img.icons8.com/color/344/python--v1.png' alt="Python" width="40" height="40">
 </p>
 
