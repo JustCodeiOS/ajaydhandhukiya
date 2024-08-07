@@ -10,6 +10,8 @@
     <img src='https://img.icons8.com/color/344/swiftui.png' alt="SwiftUI" width="40" height="40">
     <img src='https://img.icons8.com/color/344/python--v1.png' alt="Python" width="40" height="40">
      <img src='https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg' alt="GraphQL" width="40" height="40">
+     <img src='https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg' alt="Git" width="40" height="40">
+
 
 </p>
 
