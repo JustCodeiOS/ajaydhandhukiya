@@ -1,202 +1,261 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Dhandhukiya - CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        .section {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .section-title {
+            cursor: pointer;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-content {
+            display: none;
+            padding: 10px;
+        }
+        h3 {
+            color: #333;
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-bottom: 1px solid #ccc;
+        }
+        .skills {
+            display: flex;
+            flex-direction: column;
+        }
+        .skills > div {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .toggle-all-button {
+            cursor: pointer;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the text */
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+    </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Ajay Dhandhukiya - CV&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>line-height: 1.6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h1, h2 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h1 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 0px; /* Adjust the value to decrease the space */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid #ccc;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 5px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow: hidden;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-title {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #f4f4f4;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #ccc;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-content {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h3 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #333;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #f4f4f4;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #ccc;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skills {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-direction: column;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skills &gt; div {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ul {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>list-style-type: disc;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding-left: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Ajay Dhandhukiya&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Senior iOS Developer&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-title" onclick="toggleSection('about-me')"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;About Me&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-content" id="about-me"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>I am a passionate and results-driven iOS developer with experience in the world of mobile app development.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>My journey in the iOS ecosystem has been marked by a deep commitment to crafting exceptional user experiences</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>and pushing the boundaries of what's possible with Apple's cutting-edge technologies.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-title" onclick="toggleSection('skills')"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Skills&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-content" id="skills"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3 onclick="toggleSection('hard-skills')"&gt;Hard Skills&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="section-content" id="hard-skills"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Languages:&lt;/strong&gt; Swift, Objective-C&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Frameworks:&lt;/strong&gt; UIKit, CoreData, CoreAnimation, CoreGraphics, SwiftUI&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Tools:&lt;/strong&gt; Xcode, Interface Builder, Git, CocoaPods, Carthage&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;API Integration:&lt;/strong&gt; RESTful services, JSON parsing, Alamofire&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3 onclick="toggleSection('soft-skills')"&gt;Soft Skills&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="section-content" id="soft-skills"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Observation&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Decision making&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Communication&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Multi-tasking&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-title" onclick="toggleSection('professional-experience')"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Professional Experience&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-content" id="professional-experience"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3 onclick="toggleSection('justcode')"&gt;JustCode Software Development (2021 – Present)&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="section-content" id="justcode"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Application Development&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Architecture and Design&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Code Review and Mentorship&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Problem Solving&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Performance Optimization&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Team Collaboration&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Technical Leadership&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Version Control and Deployment&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Code Documentation&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Project Management&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Security and Data Privacy&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Continuous Learning&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3 onclick="toggleSection('daemon')"&gt;Daemon Information System (2017 – 2021)&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="section-content" id="daemon"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;App Development&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Programming&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;UI/UX Design&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Bug Fixing and Debugging&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;API Integration&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-title" onclick="toggleSection('projects')"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Projects&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-content" id="projects"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;strong&gt;DaeBuild CRM:&lt;/strong&gt; CRM of construction Builder&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;strong&gt;Islamic Cal:&lt;/strong&gt; Utility app for islam&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;strong&gt;Selfume:&lt;/strong&gt; Social media app with text, audio and video&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;strong&gt;HCT:&lt;/strong&gt; Finance and Utility&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;strong&gt;Fitness Tarantula:&lt;/strong&gt; Health &amp; Fitness&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;strong&gt;JERA-DCM:&lt;/strong&gt; Disaster Counter Management app for JERA Powerplant&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-title" onclick="toggleSection('education-background')"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Education Background&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-content" id="education-background"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Gujarat Technological University&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;Bachelor in Engineering (Information Technology)&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;Completed in 2017&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Board Vishva Vidhyapith, Rajkot&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;HSC in Science&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;Completed in 2013&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function toggleSection(sectionId) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const section = document.getElementById(sectionId);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (section.style.display === 'none' || section.style.display === '') {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>section.style.display = 'block';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>section.style.display = 'none';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+
+    <div class="header">
+        <div>
+            <h1>Ajay Dhandhukiya</h1>
+            <h2>Senior iOS Developer</h2>
+        </div>
+    </div>
+    <button class="toggle-all-button" onclick="toggleAllSections()">Expand All</button>
+
+    <div class="section">
+        <div class="section-title" onclick="toggleSection('about-me')">
+            <h2>About Me</h2>
+        </div>
+        <div class="section-content" id="about-me">
+            <p>
+                I am a passionate and results-driven iOS developer with experience in the world of mobile app development. My journey in the iOS ecosystem has been marked by a deep commitment to crafting exceptional user experiences and pushing the boundaries of what's possible with Apple's cutting-edge technologies.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title" onclick="toggleSection('skills')">
+            <h2>Skills</h2>
+        </div>
+        <div class="section-content" id="skills">
+            <div>
+                <h3 onclick="toggleSection('hard-skills')">Hard Skills</h3>
+                <div class="section-content" id="hard-skills">
+                    <p><strong>Languages:</strong> Swift, Objective-C</p>
+                    <p><strong>Frameworks:</strong> UIKit, CoreData, CoreAnimation, CoreGraphics, SwiftUI</p>
+                    <p><strong>Tools:</strong> Xcode, Interface Builder, Git, CocoaPods, Carthage</p>
+                    <p><strong>API Integration:</strong> RESTful services, JSON parsing, Alamofire</p>
+                </div>
+            </div>
+            <div>
+                <h3 onclick="toggleSection('soft-skills')">Soft Skills</h3>
+                <div class="section-content" id="soft-skills">
+                    <p>Observation</p>
+                    <p>Decision making</p>
+                    <p>Communication</p>
+                    <p>Multi-tasking</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title" onclick="toggleSection('professional-experience')">
+            <h2>Professional Experience</h2>
+        </div>
+        <div class="section-content" id="professional-experience">
+            <div>
+                <h3 onclick="toggleSection('justcode')">JustCode Software Development (2021 – Present)</h3>
+                <div class="section-content" id="justcode">
+                    <ul>
+                        <li>Application Development</li>
+                        <li>Architecture and Design</li>
+                        <li>Code Review and Mentorship</li>
+                        <li>Problem Solving</li>
+                        <li>Performance Optimization</li>
+                        <li>Team Collaboration</li>
+                        <li>Technical Leadership</li>
+                        <li>Version Control and Deployment</li>
+                        <li>Code Documentation</li>
+                        <li>Project Management</li>
+                        <li>Security and Data Privacy</li>
+                        <li>Continuous Learning</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3 onclick="toggleSection('daemon')">Daemon Information System (2017 – 2021)</h3>
+                <div class="section-content" id="daemon">
+                    <ul>
+                        <li>App Development</li>
+                        <li>Programming</li>
+                        <li>UI/UX Design</li>
+                        <li>Bug Fixing and Debugging</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title" onclick="toggleSection('projects')">
+            <h2>Projects</h2>
+        </div>
+        <div class="section-content" id="projects">
+            <ul>
+                <li><strong>DaeBuild CRM:</strong> CRM of construction Builder</li>
+                <li><strong>Islamic Cal:</strong> Utility app for islam</li>
+                <li><strong>Selfume:</strong> Social media app with text, audio and video</li>
+                <li><strong>HCT:</strong> Finance and Utility</li>
+                <li><strong>Fitness Tarantula:</strong> Health & Fitness</li>
+                <li><strong>JERA-DCM:</strong> Disaster Counter Management app for JERA Powerplant</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title" onclick="toggleSection('education-background')">
+            <h2>Education Background</h2>
+        </div>
+        <div class="section-content" id="education-background">
+            <div>
+                <h3 onclick="toggleSection('gujarat-university')">Gujarat Technological University</h3>
+                <div class="section-content" id="gujarat-university">
+                    <p>Bachelor in Engineering (Information Technology)</p>
+                    <p>Completed in 2017</p>
+                </div>
+            </div>
+            <div>
+                <h3 onclick="toggleSection('board-vishva')">Bharad Vishva Vidhyapith, Rajkot</h3>
+                <div class="section-content" id="board-vishva">
+                    <p>HSC in Science</p>
+                    <p>Completed in 2013</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+            checkAllSectionsExpanded();
+        }
+
+        let allExpanded = false;
+
+        function toggleAllSections() {
+            const sections = document.querySelectorAll('.section-content');
+            const button = document.querySelector('.toggle-all-button');
+            sections.forEach(section => {
+                section.style.display = allExpanded ? 'none' : 'block';
+            });
+            button.textContent = allExpanded ? 'Expand All' : 'Collapse All';
+            allExpanded = !allExpanded;
+        }
+
+        function checkAllSectionsExpanded() {
+            const sections = document.querySelectorAll('.section-content');
+            const button = document.querySelector('.toggle-all-button');
+            const allExpandedNow = Array.from(sections).every(section => section.style.display === 'block');
+            if (allExpandedNow) {
+                button.textContent = 'Collapse All';
+                allExpanded = true;
+            } else {
+                button.textContent = 'Expand All';
+                allExpanded = false;
+            }
+        }
+    </script>
+
 </body>
 </html>
