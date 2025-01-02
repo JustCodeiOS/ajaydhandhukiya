@@ -41,7 +41,7 @@ I am a passionate and results-driven iOS developer with experience in the world 
 
 ### Professional Experience
 
-#### JustCode Software Development (2021 – Present)
+#### JustCode Software Development (2017 – Present)
 - Application Development
 - Architecture and Design
 - Code Review and Mentorship
@@ -54,9 +54,6 @@ I am a passionate and results-driven iOS developer with experience in the world 
 - Project Management
 - Security and Data Privacy
 - Continuous Learning
-
-#### Daemon Information System (2017 – 2021)
-- App Development
 - Programming
 - UI/UX Design
 - Bug Fixing and Debugging
