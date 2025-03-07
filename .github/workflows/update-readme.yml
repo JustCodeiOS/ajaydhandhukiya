@@ -46,3 +46,4 @@ jobs:
           else
             echo "Random number is not even, no commit will be made."
             exit 0  # Exit successfully if number is odd
+          fi  # This 'fi' closes the 'if' block from above
