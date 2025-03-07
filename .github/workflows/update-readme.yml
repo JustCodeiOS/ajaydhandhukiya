@@ -2,8 +2,8 @@ name: Update README with current time
 
 on:
   schedule:
-    # Runs every 1 minutes
-    - cron:  "* * * * *"  # This cron expression runs every 1 minutes
+    # Runs every 5 minutes
+    - cron: "*/5 * * * *"  # This cron expression runs every 5 minutes
   workflow_dispatch:  # Allows you to manually trigger the workflow if needed
 
 permissions:
@@ -25,7 +25,6 @@ jobs:
         run: |
           echo "### Last Updated: $(date '+%Y-%m-%d %H:%M:%S')" >> README.md
           git add README.md
-
       - name: Commit and push changes
         run: |
           git commit -m "Update README.md with current time"
