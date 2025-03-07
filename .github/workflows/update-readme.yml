@@ -1,0 +1,27 @@
+name: Update README with current time
+
+on:
+  schedule:
+    # Runs every 5 minutes
+    - cron: "*/5 * * * *"  # This cron expression runs every 5 minutes
+  workflow_dispatch:  # Allows you to manually trigger the workflow if needed
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get current time and append to README.md
+        run: |
+          echo "### Last Updated: $(date '+%Y-%m-%d %H:%M:%S')" >> README.md
+          git add README.md
+
+      - name: Commit and push changes
+        run: |
+          git commit -m "Update README.md with current time"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Uses the automatically generated token for authentication
