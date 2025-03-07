@@ -14,6 +14,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Git identity
+        run: |
+          git config --global user.name "Ajay Dhandhukiya"
+          git config --global user.email "ajay@justcodenow.con"
+      
       - name: Get current time and append to README.md
         run: |
           echo "### Last Updated: $(date '+%Y-%m-%d %H:%M:%S')" >> README.md
