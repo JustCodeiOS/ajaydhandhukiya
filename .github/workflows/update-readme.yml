@@ -3,7 +3,7 @@ name: Update README with current time
 on:
   schedule:
     # Runs every 5 minutes
-    - cron: "*/5 * * * *"  # This cron expression runs every 5 minutes
+    - cron: "* * * * *"  # This cron expression runs every 5 minutes
   workflow_dispatch:  # Allows you to manually trigger the workflow if needed
 
 permissions:
@@ -37,7 +37,6 @@ jobs:
               git commit -m "Commit number $i at $(date '+%Y-%m-%d %H:%M:%S')"
           else
             echo "Odd number, breaking the schedule. No commits will be made."
-            exit 0  
           fi
         
       - name: Commit and push changes
