@@ -3,7 +3,7 @@ name: Update README with current time
 on:
   schedule:
     # Runs every 5 minutes
-    - cron: "*/5 * * * *"  # This cron expression runs every 5 minutes
+    - cron: "*/1 * * * *"  # This cron expression runs every 5 minutes
   workflow_dispatch:  # Allows you to manually trigger the workflow if needed
 
 permissions:
@@ -18,8 +18,8 @@ jobs:
 
       - name: Set up Git identity
         run: |
-          git config --global user.name "Ajay Dhandhukiya"
-          git config --global user.email "ajay@justcodenow.con"
+          git config --global user.name "DevJC"
+          git config --global user.email "devjc0011@gmail.com"
       
       - name: Get current time and append to README.md
         run: |
