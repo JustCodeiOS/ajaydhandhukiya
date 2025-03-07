@@ -2,12 +2,12 @@ name: Update README with current time
 
 on:
   schedule:
-    # Runs every 2 minutes
-    - cron: "*/2 * * * *"  # This cron expression runs every 2 minutes
+    - cron: "*/5 * * * *"  # This cron expression runs every 5 minutes
   workflow_dispatch:  # Allows you to manually trigger the workflow if needed
 
 permissions:
   contents: write  # Ensure permission to modify repository contents
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -20,26 +20,29 @@ jobs:
         run: |
           git config --global user.name "JustCodeiOS"
           git config --global user.email "estm.itpro@gmail.com"
-      
-      - name: Get current time and append to README.md
+
+      - name: Get random number and decide whether to commit
         run: |
           # Generate a random number between 1 and 9
           RANDOM_COMMITS=$(shuf -i 1-9 -n 1)
           echo "Random number generated: $RANDOM_COMMITS"
 
-          # Check if the number is even or odd
+          # Check if the number is even
           if [ $((RANDOM_COMMITS % 2)) -eq 0 ]; then
-            echo "Even number, proceeding with commits."
+            echo "Even number, proceeding with commit."
 
-            # Loop to make the random number of commit
-              echo "### Last Updated: $(date '+%Y-%m-%d %H:%M:%S')" >> README.md
-              git add README.md
-              git commit -m "Commit number $i at $(date '+%Y-%m-%d %H:%M:%S')"
+            # Append the current date/time to the README
+            echo "### Last Updated: $(date '+%Y-%m-%d %H:%M:%S')" >> README.md
+            git add README.md
+
+            # Check if there are changes to commit
+            if git diff --cached --quiet; then
+              echo "No changes to commit."
+              exit 0  # No changes to commit, so exit the job
+            else
+              git commit -m "Update README.md with current time at $(date '+%Y-%m-%d %H:%M:%S')"
+              git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/JustCodeiOS/ajaydhandhukiya.git
+            fi
           else
-            echo "Odd number, breaking the schedule. No commits will be made."
-          fi
-        
-      - name: Commit and push changes
-        run: |
-          git commit -m "Update README.md with current time"
-          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/JustCodeiOS/ajaydhandhukiya.git
+            echo "Random number is not even, no commit will be made."
+            exit 0  # Exit successfully if number is odd
