@@ -25,7 +25,7 @@ I am a passionate and results-driven iOS developer with experience in the world 
 
 ### Skills
 
-#### Hard Skills
+#### Technical Skills
 - **Languages:** Swift, Objective-C
 - **Frameworks:** UIKit, CoreData, CoreAnimation, CoreGraphics, SwiftUI
 - **Tools:** Xcode, Interface Builder, Git, CocoaPods, Carthage
