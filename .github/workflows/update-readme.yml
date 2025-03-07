@@ -27,6 +27,4 @@ jobs:
       - name: Commit and push changes
         run: |
           git commit -m "Update README.md with current time"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Uses the automatically generated token for authentication
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/JustCodeiOS/ajaydhandhukiya.git
