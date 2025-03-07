@@ -23,8 +23,23 @@ jobs:
       
       - name: Get current time and append to README.md
         run: |
-          echo "### Last Updated: $(date '+%Y-%m-%d %H:%M:%S')" >> README.md
-          git add README.md
+          # Generate a random number between 1 and 9
+          RANDOM_COMMITS=$(shuf -i 1-9 -n 1)
+          echo "Random number generated: $RANDOM_COMMITS"
+
+          # Check if the number is even or odd
+          if [ $((RANDOM_COMMITS % 2)) -eq 0 ]; then
+            echo "Even number, proceeding with commits."
+
+            # Loop to make the random number of commit
+              echo "### Last Updated: $(date '+%Y-%m-%d %H:%M:%S')" >> README.md
+              git add README.md
+              git commit -m "Commit number $i at $(date '+%Y-%m-%d %H:%M:%S')"
+          else
+            echo "Odd number, breaking the schedule. No commits will be made."
+            exit 0  
+          fi
+        
       - name: Commit and push changes
         run: |
           git commit -m "Update README.md with current time"
